@@ -36,7 +36,7 @@ body{
     width: 33.3%;
     height: 33.3%;
     outline: solid black;
-    font-size: 25vh;
+    font-size: 35vh;
 }
 .cross{
     background-color: antiquewhite;
@@ -96,7 +96,9 @@ body{
     width: 30vw;
     height: 30vw;
     }
-    
+    .element{
+        font-size: 12vw;
+    }
 }
     
 
