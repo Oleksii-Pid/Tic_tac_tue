@@ -1,0 +1,102 @@
+body{
+    
+    display: flex;
+    justify-content: center;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95vw;
+    height: 95vw;
+    position: relative;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: inherit;
+    height: inherit;
+    margin: auto;
+    position: absolute;
+    z-index: 2;
+
+    box-sizing: border-box;
+}
+.element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    width: 33.3%;
+    height: 33.3%;
+    outline: solid black;
+    font-size: 800%;
+}
+.cross{
+    background-color: antiquewhite;
+    opacity: 50%;
+    pointer-events: none;
+}
+.end-box{
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid black;
+
+    position: absolute ;
+    z-index: 10;
+    margin: auto
+}
+.win{
+    font-size: 1rem;
+    font-weight: bold;
+    background: green;
+    text-align: center;
+}
+.play{
+    width: 100%;
+}
+.line{
+    position: absolute;
+    z-index: 5;
+    background: red;
+    border-radius: 6px;
+    height: 3px;
+}
+.one{
+    transform: rotate(45deg);
+}
+.two{
+    transform: rotate(-45deg);
+}
+.three{
+    top:16.66%
+}
+.four{
+    top:83.4%
+}
+.seven,
+.six,
+.five{
+    transform: rotate(90deg);
+}
+.five{
+    margin-left: -66.4%;
+}
+.seven{
+    margin-left: 66.4%;
+}
+@media (min-width: 426px) {
+    .wrapper{
+    width: 30vw;
+    height: 30vw;
+    }
+    
+}
+    
+
