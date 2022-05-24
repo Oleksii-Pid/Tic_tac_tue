@@ -30,7 +30,7 @@ container.addEventListener('click', clickRender);
 function clickRender(e){
     for(i=0; i<elements.length; i++){
         if(e.target == elements[i]){
-            currentValue = !status ? X : ZERO;
+            currentValue = !status ? ZERO : X;
             elementValues[i] = currentValue;
             status = !status;
             render();
@@ -42,7 +42,7 @@ function addStyleCross(a,b,c){
     elements[b].classList.add('cross');
     elements[c].classList.add('cross');
     container.style.pointerEvents = "none";
-    status ? theEnd(`Переміг ${X}`) : theEnd(`Переміг ${ZERO}`)
+    status ? theEnd(`Переміг ${ZERO}`) : theEnd(`Переміг ${X}`)
 }
 
 function pointLine(){    
